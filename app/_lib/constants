@@ -1,0 +1,239 @@
+export const navLinks = [
+  { to: "/", label: "Home" },
+  { to: "/about", label: "About" },
+  { to: "/projects", label: "Projects" },
+  { to: "/blog", label: "Blog" },
+  { to: "/contact", label: "Contact" },
+];
+
+export const sideNavLinks = [
+  { to: "/about", label: "About" },
+  { to: "/about/achievements", label: "Achievements" },
+  { to: "/about/skills", label: "Skills" },
+  { to: "/about/experience", label: "Experience" },
+];
+
+export const educationTimeline = [
+  {
+    qualification: "Bachelor Of Technology, Computer Science",
+    graduationYear: "2027",
+    grade: "3.96/4.00",
+    institute:
+      "Mukesh Patel School of Technology, Management and Engineering, NMIMS University, Shirpur, Maharashtra.",
+    accolades:
+      "Appeared first on the Dean's List for the third semester, with a GPA of 4.00/4.00",
+  },
+  {
+    qualification: "Higher Secondary",
+    graduationYear: "2023",
+    grade: "87.00%",
+    institute:
+      "Pandu Bhau Mali Municipal Highschool and Junior College, Shirpur.",
+    accolades: "School Rank 1 in the 12th Board Examinations.",
+  },
+  {
+    qualification: "Schooling",
+    graduationYear: "2021",
+    grade: "99.00%",
+    institute: "Amrishbhai R. Patel School, C.B.S.E., Shirpur.",
+    accolades: "Regional topper in the 10th Boards Examinations.",
+  },
+];
+
+export const achievements = [
+  {
+    title: "DAA Certification by Chennai Mathematical Institute, 2025",
+    description:
+      "Silver + Elite (top 5% in the country) Certification obtained in the subject of Design and Analysis of Algorithms, after an on-centre, proctored online test. The course was provided by the Chennai Mathematical Institute under the reputed NPTEL organisation.",
+  },
+  {
+    title: "Google Women Engineers Scholar, 2024",
+    description:
+      "Selected out of over 30,000 participants for a two-year program after 5 intense technical shortlisting rounds (Selection rate: 0.6 percentage). Received full program Scholarship by Google and an additional Rs. 1,00,000.",
+  },
+  {
+    title: "Reliance Foundation Undergraduate Scholar, 2024",
+    description:
+      "Selected for a four year Nationwide Scholarship program for first year undergraduates via an Aptitude Test, with an amount of Rs. 2,00,000",
+  },
+];
+
+export const languages = [
+  {
+    name: "C++",
+    src: "/skills/icons8-c-100 (1).png",
+  },
+  {
+    name: "JavaScript",
+    src: "/skills/icons8-javascript-100.png",
+  },
+  {
+    name: "Python",
+    src: "/skills/icons8-python-100 (1).png",
+  },
+  {
+    name: "Java",
+    src: "/skills/icons8-java-100 (1).png",
+  },
+  {
+    name: "HTML",
+    src: "/skills/icons8-html-100 (1).png",
+  },
+  {
+    name: "CSS",
+    src: "/skills/icons8-css-100 (1).png",
+  },
+];
+
+export const frameworks = [
+  {
+    name: "ReactJS",
+    src: "/skills/programing.png",
+  },
+  {
+    name: "Redux",
+    src: "/skills/icons8-redux-100.png",
+  },
+  {
+    name: "NextJS",
+    src: "/skills/next.6f547f03.svg",
+  },
+  {
+    name: "NodeJS",
+    src: "/skills/icons8-nodejs-100.png",
+  },
+
+  {
+    name: "MongoDB",
+    src: "/skills/icons8-mongodb-100.png",
+  },
+  {
+    name: "Tailwind",
+    src: "/skills/tailwind-svgrepo-com.8bce21fd.svg",
+  },
+  {
+    name: "MySQL",
+    src: "/skills/mysql-logo-svgrepo-com.f890b562.svg",
+  },
+  {
+    name: "Xampp",
+    src: "/skills/xampp-logo-ac950edf.svg",
+  },
+];
+
+export const platforms = [
+  {
+    name: "Google Cloud Platform",
+    src: "/skills/cloud.png",
+  },
+  {
+    name: "Netbeans",
+    src: "/skills/icons8-apache-netbeans-100.png",
+  },
+  {
+    name: "GitHub",
+    src: "/skills/github-svgrepo-com.cc522f6e.svg",
+  },
+  {
+    name: "Git",
+    src: "/skills/git-svgrepo-com.0254872f.svg",
+  },
+  {
+    name: "GitLab",
+    src: "/skills/icons8-gitlab-100.png",
+  },
+];
+
+export const projects = [
+  {
+    title: "Portfolio Website",
+    description:
+      "An intoduction to me and my work, built with NextJS, Tailwind and showcasing my development prowess.",
+    src: "/Portfolio.png",
+    techStack: ["NextJS", "ReactJS", "TailwindCSS"],
+    type: "live",
+    demo: "/",
+    github: "",
+  },
+  {
+    title: "InkMuse",
+    description:
+      "A Blogging Website utilizing modern technologies like ReactJS, NodeJS with ExpressJS. Seamless UI and UX acheived with the help of MaterialUI. Applied JWT based authentication for generating Secret Keys.",
+    src: "/InkMuse.png",
+    techStack: ["ReactJS", "MongoDB", "MaterialUI", "JWT"],
+    type: "live",
+    demo: "https://ink-muse-theta.vercel.app/",
+    github: "https://github.com/laxitajain/Ink_Muse",
+  },
+  {
+    title: "Nirog",
+    description:
+      "A standalone JAVA application, for a seamless Hospital Management System. Built using Java Swing GUI and JAVA for backend. Xammp and MySQL were utilisied for database connectivity. Offers seperate doctors' and patients' modules for storing details of them. Efficiency using one-click patient-history retreival and addition of new entry for each patient visit.",
+    src: "/Nirog.png",
+    type: "report",
+    techStack: ["Java Swing", "MySQL"],
+    demo: "https://docs.google.com/document/d/1EY6khSM6qk2uXDqUK0U_7O6tlO2PfmyX/edit?usp=sharing&ouid=101245052974175802525&rtpof=true&sd=true",
+    github: "https://github.com/laxitajain/Nirog",
+  },
+  {
+    title: "CrimeTrack",
+    description:
+      "A fully normalized relational database to manage crime records, including entities like Police Stations, Officers, Suspects, Victims, and Crimes. Used Oracle SQL to build tables with appropriate constraints (CHECK, NOT NULL, FOREIGN KEY) to ensure data integrity and consistency. Created complex SQL queries to analyze crime patterns, officer performance, and regional crime hotspots.",
+    src: "/CrimeTrack.png",
+    type: "report",
+    techStack: ["Oracle SQL", "ER Modelling", "Normalisation"],
+    demo: "https://docs.google.com/document/d/1O9BQUDaLFRGTpT2TKUfzjIplbBrALNCp/edit?usp=sharing&ouid=101245052974175802525&rtpof=true&sd=true",
+    github: "",
+  },
+  {
+    title: "Knight's Quest",
+    description:
+      "A mario-like adventure game developed in Godot engine. A simple, yet captivating game built using Godot’s own built-in scripting language, GDScript, a high-level, gradually typed programming language which is syntactically similar to Python. Enabled an indulging experience with a groovy BGM, SFX, and customised GUI. Functional pickups or coins, and a scoreboard to further elevate the gameplay. Got a clear understanding of Godot Engine’s node-based scene system simplifying the development process.",
+    src: "/KnightQuest.png",
+    type: "none",
+    techStack: ["Godot Engine", "GDScript"],
+    github: "https://github.com/laxitajain/Knight-s-Quest",
+  },
+];
+
+export const blogCards = [
+  {
+    title: "The genesis of intelligent prompts",
+    description:
+      "Writing prompts is like writing good code- they should be precise, efficient and and able to handle edge cases well… With AI at our disposals, activities of day-to-day have become incredibly convenient...",
+    // So much so, the GPT tab on our PCs practically never closes! Being a second year student enrolled in a Computer Science Engineering Programme, I witness this phenomena nearly every day. With my pals, rushing through their assignments and DSA practicals by hard-core copy-pasting codes from their very own, aforementioned saviour, ChatGPT. Which, of course, on a moral ground is incorrect and shouldn’t be this way in the first place. But where my problem lies, is actually on a different and more important front- the practical aspect. Getting your labs done and dusted and your submissions aligned is important, but really? You call yourselves engineers (in the making), without having to put yourselves through the ‘pain’ of thinking and actually engineering? Self-sabotage much? I could write an entire article on this, but let’s not deviate from the actual topic at hand...",
+    src: "/blog1.png",
+    href: "https://medium.com/@laxitajain912/the-genesis-of-intelligent-prompts-b919118a398a",
+  },
+  {
+    title: "Silicon Sisterhood: The Feminine Midas",
+    description:
+      " In recent years, the tech industry has witnessed a significant transformation, with women stepping into roles that were once dominated by men. As we celebrate this shift, it's essential to highlight the contributions, achievements...",
+    // and the ongoing challenges faced by women in tech. This blog post aims to provide a thought-provoking exploration of the 'Silicon Sisterhood', showcasing the strides women are making and the impact they have on the tech landscape. According to a 2023 report by the National Center for Women & Information Technology (NCWIT), women hold approximately 26% of computing jobs in the United States. While this number has increased over the past decade, it still reflects a significant gender gap. Moreover, women of color are particularly underrepresented, making up only 3% of the computing workforce. This disparity highlights the urgent need for systemic change within the industry. Research shows that diversity in tech teams leads to greater innovation and better decision-making. A study by McKinsey found that companies in the top quartile for gender diversity on executive teams were 25% more likely to experience above-average profitability...",
+    src: "/blog2.png",
+    href: "https://laxitajain.blogspot.com/2024/09/silicon-sisterhood-impact-of-feminine.html",
+  },
+];
+
+export const socialLinks = [
+  {
+    icon: "/icons/icons8-github-logo.svg",
+    link: "https://github.com/laxitajain/",
+    alt: "GitHub",
+  },
+  {
+    icon: "/icons/icons8-linkedin (1).svg",
+    link: "https://www.linkedin.com/in/laxitajain912/",
+    alt: "LinkedIn",
+  },
+  {
+    icon: "/icons/leetcode-svgrepo-com.svg",
+    link: "https://leetcode.com/u/laxitajain/",
+    alt: "Leetcode",
+  },
+  {
+    icon: "/icons/geeksforgeeks-svgrepo-com (1).svg",
+    link: "https://www.geeksforgeeks.org/user/olaff/",
+    alt: "GeeksforGeeks",
+  },
+];
