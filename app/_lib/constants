@@ -43,7 +43,7 @@ export const educationTimeline = [
 export const achievements = [
   {
     title:
-      "DBMS Certification by India Institute of Technology Kharagpur (IIT KGP), 2025",
+      "DBMS Certification by Indian Institute of Technology Kharagpur (IIT KGP), 2025",
     description:
       "Gold + Elite (top 1% in the country) Certification obtained in the subject of Database Management Systems, after an on-center, proctored online test. The course was provided by the IIT KGP under the reputed NPTEL organisation.",
   },
