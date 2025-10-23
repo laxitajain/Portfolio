@@ -43,7 +43,7 @@ export default function Page() {
           </div>
           <div className="flex  justify-center lg:w-1/2 lg:justify-end mt-8 lg:mt-0">
             <Image
-              src="/me.png"
+              src="/me1.png"
               alt="Profile picture"
               width={300}
               height={300}
