@@ -42,9 +42,15 @@ export const educationTimeline = [
 
 export const achievements = [
   {
+    title:
+      "DBMS Certification by India Institute of Technology Kharagpur (IIT KGP), 2025",
+    description:
+      "Gold + Elite (top 1% in the country) Certification obtained in the subject of Database Management Systems, after an on-center, proctored online test. The course was provided by the IIT KGP under the reputed NPTEL organisation.",
+  },
+  {
     title: "DAA Certification by Chennai Mathematical Institute, 2025",
     description:
-      "Silver + Elite (top 5% in the country) Certification obtained in the subject of Design and Analysis of Algorithms, after an on-centre, proctored online test. The course was provided by the Chennai Mathematical Institute under the reputed NPTEL organisation.",
+      "Silver + Elite (top 5% in the country) Certification obtained in the subject of Design and Analysis of Algorithms, after an on-center, proctored online test. The course was provided by the Chennai Mathematical Institute under the reputed NPTEL organisation.",
   },
   {
     title: "Google Women Engineers Scholar, 2024",
