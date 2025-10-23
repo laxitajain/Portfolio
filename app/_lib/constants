@@ -60,7 +60,7 @@ export const achievements = [
   {
     title: "Reliance Foundation Undergraduate Scholar, 2024",
     description:
-      "Selected for a four year Nationwide Scholarship program for first year undergraduates via an Aptitude Test, with an amount of Rs. 2,00,000",
+      "Selected for a four year Nationwide Scholarship program for first year undergraduates via a robust Aptitude Test. Awareded with an amount of Rs. 2,00,000.",
   },
 ];
 
