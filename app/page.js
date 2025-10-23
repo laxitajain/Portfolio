@@ -5,7 +5,7 @@ import Button from "./_components/Button";
 
 export default function Page() {
   return (
-    <main className="mx-auto px-8 pt-12 pb-0 md:mb-[-126px] min-h-screen md:px-16">
+    <main className="mx-auto px-8 pt-2 pb-0 md:mb-[-126px] min-h-screen md:px-16">
       <div className="container mx-auto flex flex-col py-12">
         <div className="w-full flex flex-col lg:flex-row lg:items-center justify-between">
           <div className="flex flex-col justify-center text-center lg:text-left lg:w-1/2">
@@ -17,7 +17,7 @@ export default function Page() {
                 </span>
               </span>
             </h3>
-            <p className="mb-6 text-base sm:text-lg md:text-md font-body-1 font-medium leading-7 text-primary-200">
+            <p className="mb-6 text-base sm:text-lg md:text-md font-body-1 text-justify font-medium leading-7 text-primary-200">
               In a world teeming with code, I strive to build meaning. My
               commitment lies in more than writing clean code; it&apos;s about
               decoding chaos and delivering web solutions that breathe purpose
@@ -43,10 +43,10 @@ export default function Page() {
           </div>
           <div className="flex  justify-center lg:w-1/2 lg:justify-end mt-8 lg:mt-0">
             <Image
-              src="/main.png"
+              src="/me.png"
               alt="Profile picture"
-              width={380}
-              height={380}
+              width={300}
+              height={300}
               className="rounded-2xl"
             />
           </div>
