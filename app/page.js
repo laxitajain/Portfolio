@@ -24,12 +24,12 @@ export default function Page() {
               This page serves as an introduction to my work! :)
             </p>
             <div className="flex flex-col items-center lg:flex-row">
-              <Link
+              {/* <Link
                 href="https://drive.google.com/file/d/1Pcvaay1mcUC4pwV5KxH2nNwYFtfJ1olp/view?usp=sharing"
                 target="_blank"
               >
                 <button class="glossy-button">Resume</button>
-              </Link>
+              </Link> */}
               {/* x */}
             </div>
           </div>
