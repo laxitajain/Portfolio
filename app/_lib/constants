@@ -174,7 +174,7 @@ export const projects = [
   {
     title: "Dragonfruit NL-to-SQL TUI IDE",
     description:
-      "A minimalist TUI that takes natural language (english) queries from the user and converts this into SQL queries which can be executed in place with a robust IDE support.",
+      "A minimalist TUI that takes natural language (english) queries from the user and converts these into SQL queries which can be executed in place with a robust IDE support.",
     src: "/dragonfruit.png",
     techStack: ["Python", "Textual", "PyPi", "Rich"],
     type: "live",
