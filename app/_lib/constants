@@ -155,7 +155,7 @@ export const projects = [
     title: "NextBite",
     description:
       "A food redistribution platform to eliminate food waste and improve sustainability in communities. Connects Donors (restaurants, households, cafes) with  surplus food to recipients (NGO's, shelters, individuals) via the platform. Zero waste + Zero delivery model via scheduling pickups for urgency-labelled food.",
-    src: "/Portfolio.png",
+    src: "/nextbite.jpeg",
     techStack: ["NextJS", "ReactJS", "GeolocationAPI"],
     type: "live",
     demo: "/",
@@ -165,21 +165,21 @@ export const projects = [
     title: "Detecting Brain Tumors from MRI Scans",
     description:
       "Classical image processing to measure the contribution of preprocessing and morphological steps to segmentation performance, I conducted a comprehensive ablation study using the BraTS dataset. Anisotropic diffusion filtering and top-hat correction can increase Dice similarity by up to 7%, according to the results, highlighting the importance of well-thought-out classical preprocessing in tumor segmentation.",
-    src: "/Portfolio.png",
+    src: "/bt.png",
     techStack: ["Python", "BRaTS Dataset", "Segmentation and Morphological Algorithms"],
     type: "live",
-    demo: "/",
-    github: "",
+    demo: "https://drive.google.com/drive/folders/14D0MdPgdtskX--WHX4fQWanAk4actPdH",
+    github: "https://github.com/laxitajain/brain-tumor-detection-classical-ip",
   },
   {
     title: "Dragonfruit NL-to-SQL TUI IDE",
     description:
-      "Classical image processing to measure the contribution of preprocessing and morphological steps to segmentation performance, I conducted a comprehensive ablation study using the BraTS dataset. Anisotropic diffusion filtering and top-hat correction can increase Dice similarity by up to 7%, according to the results, highlighting the importance of well-thought-out classical preprocessing in tumor segmentation.",
-    src: "/Portfolio.png",
+      "A minimalist TUI that takes natural language (english) queries from the user and converts this into SQL queries which can be executed in place with a robust IDE support.",
+    src: "/dragonfruit.png",
     techStack: ["Python", "Textual", "PyPi", "Rich"],
     type: "live",
-    demo: "/",
-    github: "",
+    demo: "https://pypi.org/project/dragonfruit-tui/",
+    github: "https://github.com/laxitajain/dragonfruit-tui",
   },
   {
     title: "Portfolio Website",
