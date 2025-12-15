@@ -18,18 +18,10 @@ export default function Page() {
               </span>
             </h3>
             <p className="mb-6 text-base sm:text-lg md:text-md font-body-1 text-justify font-medium leading-7 text-primary-200">
-              In a world teeming with code, I strive to build meaning. My
-              commitment lies in more than writing clean code; it&apos;s about
-              decoding chaos and delivering web solutions that breathe purpose
-              into pixels. I aim to make interfaces intuitive, performance
-              sharp, and ideas concrete. I believe software should not just
-              function — it should resonate, empower, and simplify lives. From
-              frictionless user flows to scalable architectures, my passion is
-              rooted in bridging problems to practical solutions. I see
-              challenges as creative blueprints, each waiting to be transformed
-              into impact. Whether it&apos;s through frontend finesse or backend
-              strategy, I&apos;m here to build tools that don&apos;t just work —
-              but catalyze.
+              I'm a 20 year-old aspiring software developer. With experience in the MERN stack, my skills in NextJS and backend development have honed over the past year.
+              I have dedicated my time to understanding deep learning fundamentals from the grassroot level.
+              Solving the minor and major conveniences that I face in life using these learnings bring my efforts to fruition. I have quite the diverse portfolio with bootcamps attended, scholars' fellowships, research work, academic triumph and open source contributions.
+              This page serves as an introduction to my work! :)
             </p>
             <div className="flex flex-col items-center lg:flex-row">
               <Link

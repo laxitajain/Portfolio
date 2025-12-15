@@ -11,9 +11,9 @@ export default function Page() {
     <div>
       <h2 className=" text-2xl text-accent-400 mb-7">About me</h2>
       <div className="mt-4 text-accent-30">
-        A pre-final year student in B.Tech., Computer Science who relishes
-        learning new things. I am focused on readily honing my skills in
-        problem-solving, with 400+ questions solved till date. I enjoy web
+        I am pre-final year student in B.Tech., Computer Science who relishes
+        learning new things. Focused on readily honing my skills in
+        problem-solving I have solve 700+ questions solved till date. I enjoy web
         development and the endless creative possibilities that it offers.
         Employimg my ReactJS, NodeJS skills to build web applications is my
         forte. I am a curious Machine Learning Enthusiast and the field of deep
