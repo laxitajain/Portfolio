@@ -18,9 +18,9 @@ export default function Page() {
               </span>
             </h3>
             <p className="mb-6 text-base sm:text-lg md:text-md font-body-1 text-justify font-medium leading-7 text-primary-200">
-              I'm a 20 year-old aspiring software developer. With experience in the MERN stack, my skills in NextJS and backend development have honed over the past year.
-              I have dedicated my time to understanding deep learning fundamentals from the grassroot level.
-              Solving the minor and major conveniences that I face in life using these learnings bring my efforts to fruition. I have quite the diverse portfolio with bootcamps attended, scholars' fellowships, research work, academic triumph and open source contributions.
+              I&apos;m a 20-year-old aspiring software developer. With experience in the MERN stack, my skills in Next.js and backend development have been honed over the past year.
+              I have dedicated my time to understanding deep learning fundamentals from the grassroots level.
+              Solving the minor and major inconveniences I face in daily life using these learnings brings my efforts to fruition. I have a diverse portfolio that includes bootcamps attended, scholars&apos; fellowships, research work, academic triumph, and open-source contributions.
               This page serves as an introduction to my work! :)
             </p>
             <div className="flex flex-col items-center lg:flex-row">
