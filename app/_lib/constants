@@ -156,7 +156,7 @@ export const projects = [
     description:
       "A food redistribution platform to eliminate food waste and improve sustainability in communities. Connects Donors (restaurants, households, cafes) with  surplus food to recipients (NGO's, shelters, individuals) via the platform. Zero waste + Zero delivery model via scheduling pickups for urgency-labelled food.",
     src: "/nextbite.jpeg",
-    techStack: ["NextJS", "ReactJS", "GeolocationAPI"],
+    techStack: ["NextJS", "TailwindCSS", "GeolocationAPI"],
     type: "live",
     demo: "/",
     github: "",
@@ -186,7 +186,7 @@ export const projects = [
     description:
       "An intoduction to me and my work, built with NextJS, Tailwind and showcasing my development prowess.",
     src: "/Portfolio.png",
-    techStack: ["NextJS", "ReactJS", "TailwindCSS"],
+    techStack: ["NextJS", "TailwindCSS", "ResendAPI"],
     type: "live",
     demo: "/",
     github: "",
