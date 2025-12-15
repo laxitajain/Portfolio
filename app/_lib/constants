@@ -151,6 +151,36 @@ export const platforms = [
 ];
 
 export const projects = [
+   {
+    title: "NextBite",
+    description:
+      "A food redistribution platform to eliminate food waste and improve sustainability in communities. Connects Donors (restaurants, households, cafes) with  surplus food to recipients (NGO's, shelters, individuals) via the platform. Zero waste + Zero delivery model via scheduling pickups for urgency-labelled food.",
+    src: "/Portfolio.png",
+    techStack: ["NextJS", "ReactJS", "GeolocationAPI"],
+    type: "live",
+    demo: "/",
+    github: "",
+  },
+  {
+    title: "Detecting Brain Tumors from MRI Scans",
+    description:
+      "Classical image processing to measure the contribution of preprocessing and morphological steps to segmentation performance, I conducted a comprehensive ablation study using the BraTS dataset. Anisotropic diffusion filtering and top-hat correction can increase Dice similarity by up to 7%, according to the results, highlighting the importance of well-thought-out classical preprocessing in tumor segmentation.",
+    src: "/Portfolio.png",
+    techStack: ["Python", "BRaTS Dataset", "Segmentation and Morphological Algorithms"],
+    type: "live",
+    demo: "/",
+    github: "",
+  },
+  {
+    title: "Dragonfruit NL-to-SQL TUI IDE",
+    description:
+      "Classical image processing to measure the contribution of preprocessing and morphological steps to segmentation performance, I conducted a comprehensive ablation study using the BraTS dataset. Anisotropic diffusion filtering and top-hat correction can increase Dice similarity by up to 7%, according to the results, highlighting the importance of well-thought-out classical preprocessing in tumor segmentation.",
+    src: "/Portfolio.png",
+    techStack: ["Python", "Textual", "PyPi", "Rich"],
+    type: "live",
+    demo: "/",
+    github: "",
+  },
   {
     title: "Portfolio Website",
     description:
@@ -162,16 +192,6 @@ export const projects = [
     github: "",
   },
   {
-    title: "InkMuse",
-    description:
-      "A Blogging Website utilizing modern technologies like ReactJS, NodeJS with ExpressJS. Seamless UI and UX acheived with the help of MaterialUI. Applied JWT based authentication for generating Secret Keys.",
-    src: "/InkMuse.png",
-    techStack: ["ReactJS", "MongoDB", "MaterialUI", "JWT"],
-    type: "live",
-    demo: "https://ink-muse-theta.vercel.app/",
-    github: "https://github.com/laxitajain/Ink_Muse",
-  },
-  {
     title: "Nirog",
     description:
       "A standalone JAVA application, for a seamless Hospital Management System. Built using Java Swing GUI and JAVA for backend. Xammp and MySQL were utilisied for database connectivity. Offers seperate doctors' and patients' modules for storing details of them. Efficiency using one-click patient-history retreival and addition of new entry for each patient visit.",
@@ -180,25 +200,6 @@ export const projects = [
     techStack: ["Java Swing", "MySQL"],
     demo: "https://docs.google.com/document/d/1EY6khSM6qk2uXDqUK0U_7O6tlO2PfmyX/edit?usp=sharing&ouid=101245052974175802525&rtpof=true&sd=true",
     github: "https://github.com/laxitajain/Nirog",
-  },
-  {
-    title: "CrimeTrack",
-    description:
-      "A fully normalized relational database to manage crime records, including entities like Police Stations, Officers, Suspects, Victims, and Crimes. Used Oracle SQL to build tables with appropriate constraints (CHECK, NOT NULL, FOREIGN KEY) to ensure data integrity and consistency. Created complex SQL queries to analyze crime patterns, officer performance, and regional crime hotspots.",
-    src: "/CrimeTrack.png",
-    type: "report",
-    techStack: ["Oracle SQL", "ER Modelling", "Normalisation"],
-    demo: "https://docs.google.com/document/d/1O9BQUDaLFRGTpT2TKUfzjIplbBrALNCp/edit?usp=sharing&ouid=101245052974175802525&rtpof=true&sd=true",
-    github: "",
-  },
-  {
-    title: "Knight's Quest",
-    description:
-      "A mario-like adventure game developed in Godot engine. A simple, yet captivating game built using Godot’s own built-in scripting language, GDScript, a high-level, gradually typed programming language which is syntactically similar to Python. Enabled an indulging experience with a groovy BGM, SFX, and customised GUI. Functional pickups or coins, and a scoreboard to further elevate the gameplay. Got a clear understanding of Godot Engine’s node-based scene system simplifying the development process.",
-    src: "/KnightQuest.png",
-    type: "none",
-    techStack: ["Godot Engine", "GDScript"],
-    github: "https://github.com/laxitajain/Knight-s-Quest",
   },
 ];
 
