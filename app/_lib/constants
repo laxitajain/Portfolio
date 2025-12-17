@@ -225,7 +225,7 @@ export const blogCards = [
 export const socialLinks = [
   {
     icon: "/icons/icons8-github-logo.svg",
-    link: "https://github.com/laxitajain/",
+    link: "https://github.com//",
     alt: "GitHub",
   },
   {
@@ -235,12 +235,12 @@ export const socialLinks = [
   },
   {
     icon: "/icons/leetcode-svgrepo-com.svg",
-    link: "https://leetcode.com/u/laxitajain/",
+    link: "https://leetcode.com/u//",
     alt: "Leetcode",
   },
   // {
   //   icon: "/icons/geeksforgeeks-svgrepo-com (1).svg",
-  //   link: "https://www.geeksforgeeks.org/user/olaff/",
+  //   link: "https://www.geeksforgeeks.org/user//",
   //   alt: "GeeksforGeeks",
   // },
 ];
