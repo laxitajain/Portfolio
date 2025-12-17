@@ -238,9 +238,9 @@ export const socialLinks = [
     link: "https://leetcode.com/u/laxitajain/",
     alt: "Leetcode",
   },
-  {
-    icon: "/icons/geeksforgeeks-svgrepo-com (1).svg",
-    link: "https://www.geeksforgeeks.org/user/olaff/",
-    alt: "GeeksforGeeks",
-  },
+  // {
+  //   icon: "/icons/geeksforgeeks-svgrepo-com (1).svg",
+  //   link: "https://www.geeksforgeeks.org/user/olaff/",
+  //   alt: "GeeksforGeeks",
+  // },
 ];
