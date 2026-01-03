@@ -11,15 +11,13 @@ export default function Page() {
     <div>
       <h2 className=" text-2xl text-accent-400 mb-7">About me</h2>
       <div className="mt-4 text-accent-30">
-        I am pre-final year student in B.Tech., Computer Science who relishes
+        I am a pre-final year student in B.Tech., Computer Science who relishes
         learning new things. Focused on readily honing my skills in
-        problem-solving I have solve 700+ questions solved till date. I enjoy web
-        development and the endless creative possibilities that it offers.
-        Employimg my ReactJS, NodeJS skills to build web applications is my
-        forte. I am a curious Machine Learning Enthusiast and the field of deep
-        learning and neural networks garners my interest. With a 3.96/4.00 CGPA,
-        I have maintained a decent academic track record. Beyond academics, I am
-        an avid reader, a comic fanatic and an occasional writer. I value
+        problem-solving, I have solved 700+ questions till date. My skillset is diverse with modern web frameworks (like NextJS), a knack for CLI utlities and avid interest in Machine Learning.
+        I spend most of my time studying algorithms, reading research in AI or contributing to open-source. 
+        With a 3.97/4.00 CGPA (I have got to flex it somewhere),
+        I have maintained a good academic track record. Beyond tech, I am
+        an avid reader, a comic fanatic, an occasional writer and a personal finance enthusiast! I value
         integrity and enjoy engaging in intellectual conversations! :)
       </div>
 
