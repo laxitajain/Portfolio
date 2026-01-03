@@ -15,9 +15,9 @@ export default function Page() {
         learning new things. Focused on readily honing my skills in
         problem-solving, I have solved 700+ questions till date. My skillset is diverse with modern web frameworks (like NextJS), a knack for CLI utlities and avid interest in Machine Learning.
         I spend most of my time studying algorithms, reading research in AI or contributing to open-source. 
-        With a 3.97/4.00 CGPA (I have got to flex it somewhere),
+        With a 3.97/4.00 CGPA (I have got to flex it somewhere XD),
         I have maintained a good academic track record. Beyond tech, I am
-        an avid reader, a comic fanatic, an occasional writer and a personal finance enthusiast! I value
+        an avid reader, a comic fanatic, an occasional writer, a philosophy nerd and a personal finance enthusiast! I value
         integrity and enjoy engaging in intellectual conversations! :)
       </div>
 
