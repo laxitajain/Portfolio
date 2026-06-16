@@ -1,15 +1,16 @@
 import "@/app/_styles/globals.css";
 import Header from "./_components/Header";
 
-import { Roboto } from "next/font/google";
+// import { Roboto } from "next/font/google";
 import { Dancing_Script } from "next/font/google";
 import Footer from "./_components/Footer";
 
-const roboto = Roboto({
-  subsets: ["latin"],
-  display: "swap",
-  weight: "500",
-});
+// const roboto = Roboto({
+//   subsets: ["latin"],
+//   display: "swap",
+//   weight: "500",
+//   variable: "--font-roboto",
+// });
 
 const dancing = Dancing_Script({
   subsets: ["latin"],
@@ -29,7 +30,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} ${dancing.variable} bg-primary-90 text-accent-100 min-h-screen flex flex-col antialiased relative`}
+        className={` ${dancing.variable} bg-primary-90 text-accent-100 min-h-screen flex flex-col antialiased relative`}
       >
         <Header />
         <div className="flex-1 mt-8 px-4 pt-32 py-6 grid mb-4">

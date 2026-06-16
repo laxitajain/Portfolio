@@ -1,9 +1,9 @@
 export const navLinks = [
-  { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/projects", label: "Projects" },
-  { to: "/blog", label: "Blog" },
-  { to: "/contact", label: "Contact" },
+  { to: "#home", label: "Home" },
+  { to: "#about", label: "About" },
+  { to: "#projects", label: "Projects" },
+  { to: "#blog", label: "Blog" },
+  { to: "#contact", label: "Contact" },
 ];
 
 export const sideNavLinks = [
@@ -17,11 +17,10 @@ export const educationTimeline = [
   {
     qualification: "Bachelor Of Technology, Computer Science",
     graduationYear: "2027",
-    grade: "3.96/4.00",
+    grade: "3.97/4.00",
     institute:
       "Mukesh Patel School of Technology, Management and Engineering, NMIMS University, Shirpur, Maharashtra.",
-    accolades:
-      "Appeared first on the Dean's List for the third semester, with a GPA of 4.00/4.00",
+    accolades: "Rank 1 on the Dean's list every time it was issued. I was the only one with a 4.0/4.0 GPA in the 3rd semester across all branches.",
   },
   {
     qualification: "Higher Secondary",
@@ -41,11 +40,7 @@ export const educationTimeline = [
 ];
 
 export const achievements = [
-  {
-    title:
-      "Semi-finalist in the AWS AI-for-Bharat Hackathon",
-    description:
-      "Built a repository analyser along with my teammate and reached the semi-finals of the competition."
+
   {
     title:
       "DBMS Certification by Indian Institute of Technology Kharagpur (IIT KGP), 2025",
@@ -66,6 +61,27 @@ export const achievements = [
     title: "Reliance Foundation Undergraduate Scholar, 2024",
     description:
       "Selected for a four year Nationwide Scholarship program for first year undergraduates via a robust Aptitude Test. Awarded with an amount of Rs. 2,00,000.",
+  },
+];
+
+export const experience = [
+  {
+    company: "TransCybernetics",
+    role: "Software Engineer Intern",
+    dates: "December 2025 - March 2026",
+    location: "India",
+    technologies: ["Next.js", "Tailwind CSS", "Zod", "Shadcn UI", "MongoDB", "Node.js"],
+    description:
+      "Worked in the Software Development Team with a modern tech stack involving Next.js, Tailwind CSS, Zod, Shadcn UI, MongoDB and Node.js. Assisted in simplifying backend logics, implementing robust authentication and improving UI/UX.",
+  },
+  {
+    company: "1XL Universe",
+    role: "Software Developer Intern",
+    dates: "May 2026 - July 2026",
+    location: "Dubai, UAE (on-site)",
+    technologies: ["Next.js", "Supabase", "AI Integrations", "Chrome Extension API"],
+    description:
+      "Developed an AI-powered internal training and communication quality platform focused on role-based assessments, analytics, and AI-assisted feedback systems. Worked with Next.js, Tailwind CSS, backend APIs, and AI integrations for quiz generation and performance analysis. Participated in Agile workflows, daily stand-up meetings, and collaborative development with cross-functional teams. Gained exposure to large-scale international business operations and real-world product development.",
   },
 ];
 
@@ -156,15 +172,25 @@ export const platforms = [
 ];
 
 export const projects = [
+  {
+    title: "DevSync",
+    description:
+      "Built a full-stack collaborative project management SaaS with multi-tenant workspaces with JWT authentication, role-based access control, real-time task and comment updates, Redis-backed caching and presence tracking, BullMQ background jobs, full-text search, file attachments, and Dockerized deployment with automated testing and CI workflows.",
+    src: "/dv.png",
+    techStack: ["Next.js", "TypeScript", "Node.js", "Prisma ORM", "Redis", "Socket.IO", "BullMQ", "Docker", "JWT", "REST APIs"],
+    type: "live",
+    demo: "https://dev-sync-web-jade.vercel.app/",
+    github: "https://github.com/laxitajain/DevSync",
+  },
    {
     title: "NextBite",
     description:
       "A food redistribution platform to eliminate food waste and improve sustainability in communities. Connects Donors (restaurants, households, cafes) with  surplus food to recipients (NGO's, shelters, individuals) via the platform. Zero waste + Zero delivery model via scheduling pickups for urgency-labelled food.",
     src: "/nextbite.jpeg",
-    techStack: ["NextJS", "TailwindCSS", "GeolocationAPI"],
+    techStack: ["Next.js", "React.js", "MongoDB", "TailwindCSS", "Leaflet"],
     type: "live",
-    demo: "/",
-    github: "",
+    demo: "https://next-bite-eta.vercel.app/",
+    github: "https://github.com/laxitajain/NextBite-",
   },
   {
     title: "Detecting Brain Tumors from MRI Scans",
@@ -230,7 +256,7 @@ export const blogCards = [
 export const socialLinks = [
   {
     icon: "/icons/icons8-github-logo.svg",
-    link: "https://github.com//",
+    link: "https://github.com/laxitajain",
     alt: "GitHub",
   },
   {
@@ -240,7 +266,7 @@ export const socialLinks = [
   },
   {
     icon: "/icons/leetcode-svgrepo-com.svg",
-    link: "https://leetcode.com/u//",
+    link: "https://leetcode.com/u/olafdragon/",
     alt: "Leetcode",
   },
   // {

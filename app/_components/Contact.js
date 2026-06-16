@@ -38,7 +38,7 @@ export default function Contact() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-md  p-4 rounded-md mx-auto space-y-4"
+      className="max-w-3xl p-4 rounded-md mx-auto space-y-4 w-full"
     >
       <input
         type="email"

@@ -1,15 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Yesteryear&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Roboto", sans-serif;
+}
+
 @layer utilities {
-  .scrollbar-hide::-webkit-scrollbar {
-    display: none;
+  .font-yesteryear {
+    font-family: 'Yesteryear', cursive;
   }
-  .scrollbar-hide {
+  .scrollbar-hide,
+  .scrollbar-hide * {
     -ms-overflow-style: none;
     scrollbar-width: none;
   }
+  .scrollbar-hide::-webkit-scrollbar,
+  .scrollbar-hide *::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 @layer components {
@@ -89,3 +101,4 @@
   --rdp-background-color: theme("colors.accent.60") !important;
   margin: 0 !important;
 }
+

@@ -50,6 +50,20 @@ module.exports = {
         sans: ["var(--font-roboto)", "sans-serif"],
         dancing: ["var(--font-dancing)"],
       },
+      keyframes: {
+        marquee: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-50%)' }, // scroll by 50% since we will duplicate content
+        },
+        typing: {
+          from: { width: '0' },
+          to: { width: '100%' },
+        }
+      },
+      animation: {
+        marquee: 'marquee 25s linear infinite',
+        typing: 'typing 1s steps(3, end) forwards',
+      }
     },
   },
   plugins: [],

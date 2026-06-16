@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useEffect } from "react";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 
 import { projects } from "@/app/_lib/constants";
 import Image from "next/image";
@@ -13,14 +14,14 @@ export default function ProjectSlider() {
     const slider = scrollRef.current;
     let isDown = false;
     let startX;
-    let scrollLeft;
+    let scrollLeftPos;
 
     const mouseDown = (e) => {
       isDown = true;
       slider.classList.add("cursor-grabbing");
       slider.classList.remove("cursor-grab");
       startX = e.pageX - slider.offsetLeft;
-      scrollLeft = slider.scrollLeft;
+      scrollLeftPos = slider.scrollLeft;
     };
 
     const mouseLeaveOrUp = () => {
@@ -34,7 +35,7 @@ export default function ProjectSlider() {
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
       const walk = (x - startX) * 1.5; // Adjust scroll speed
-      slider.scrollLeft = scrollLeft - walk;
+      slider.scrollLeft = scrollLeftPos - walk;
     };
 
     slider.addEventListener("mousedown", mouseDown);
@@ -53,13 +54,33 @@ export default function ProjectSlider() {
     };
   }, []);
 
+  const scrollLeft = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: -400, behavior: "smooth" });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({ left: 400, behavior: "smooth" });
+    }
+  };
+
   return (
-    <div className="mt-2 ml-0 mb-4">
+    <div className="relative mt-2 ml-0 mb-4 group">
       <h2 className="text-2xl text-accent-400 mb-7"></h2>
+
+      <button
+        onClick={scrollLeft}
+        className="hidden sm:flex absolute left-[-4rem] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-secondary-50 rounded-full items-center justify-center text-primary-90 hover:scale-110 hover:bg-secondary-40 transition-transform opacity-0 group-hover:opacity-100"
+        aria-label="Scroll left"
+      >
+        <ChevronLeft size={28} strokeWidth={3} />
+      </button>
+
       <ul
         ref={scrollRef}
-        //border-l-4 pl-4 border-secondary-30
-        className="scrollable flex flex-col sm:flex-row overflow-x-auto sm:space-x-12 space-y-8 scrollbar-hide"
+        className="scrollable flex flex-col sm:flex-row overflow-x-auto sm:space-x-12 space-y-8 scrollbar-hide py-4"
       >
         {projects.map((project) => (
           <li
@@ -79,20 +100,20 @@ export default function ProjectSlider() {
                 className="rounded-xl"
               ></Image>
             </div>
-            <div className="flex flex-col justify-betweem gap-y-4  mt-2">
-              <ul className="flex flex-wrap gap-y-1.5 gap-x-2 mx-auto">
+            <div className="flex flex-col justify-between gap-y-4 mt-2">
+              <ul className="flex flex-wrap justify-center gap-y-1.5 gap-x-2 w-full mx-auto">
                 {project.techStack.map((technology) => (
                   <li key={technology}>
                     <Button type="secondary">{technology}</Button>
                   </li>
                 ))}
               </ul>
-              <ul className="flex gap-x-1.5 mx-auto my-2 sm:m-4 items-centre">
+              <ul className="flex justify-center gap-x-1.5 w-full mx-auto my-2 sm:m-4 items-center">
                 {project.github && (
                   <li>
                     <Link href={project.github} target="_blank">
                       <Button type="tertiary">
-                        <img src="/icons/icons8-github-logo.svg"></img>SEE MORE
+                        <img src="/icons/icons8-github-logo.svg" alt="GitHub"></img>SEE MORE
                       </Button>
                     </Link>
                   </li>
@@ -101,7 +122,7 @@ export default function ProjectSlider() {
                   <li>
                     <Link href={project.demo} target="_blank">
                       <Button type="tertiary">
-                        VIEW PROJECT<img src="/diagonal-arrow (1).png"></img>
+                        VIEW PROJECT<img src="/diagonal-arrow (1).png" alt="Demo"></img>
                       </Button>
                     </Link>
                   </li>
@@ -118,6 +139,14 @@ export default function ProjectSlider() {
           </li>
         ))}
       </ul>
+
+      <button
+        onClick={scrollRight}
+        className="hidden sm:flex absolute right-[-4rem] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-secondary-50 rounded-full items-center justify-center text-primary-90 hover:scale-110 hover:bg-secondary-40 transition-transform opacity-0 group-hover:opacity-100"
+        aria-label="Scroll right"
+      >
+        <ChevronRight size={28} strokeWidth={3} />
+      </button>
     </div>
   );
 }
