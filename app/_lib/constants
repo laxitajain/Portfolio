@@ -223,16 +223,6 @@ export const projects = [
     github: "https://github.com/laxitajain/dragonfruit-tui",
   },
   {
-    title: "Portfolio Website",
-    description:
-      "An intoduction to me and my work, built with NextJS, Tailwind and showcasing my development prowess.",
-    src: "/Portfolio.png",
-    techStack: ["NextJS", "TailwindCSS", "ResendAPI"],
-    type: "live",
-    demo: "/",
-    github: "",
-  },
-  {
     title: "Nirog",
     description:
       "A standalone JAVA application, for a seamless Hospital Management System. Built using Java Swing GUI and JAVA for backend. Xammp and MySQL were utilisied for database connectivity. Offers seperate doctors' and patients' modules for storing details of them. Efficiency using one-click patient-history retreival and addition of new entry for each patient visit.",

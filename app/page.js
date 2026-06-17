@@ -62,7 +62,8 @@ export default function Page() {
                           rel="noopener noreferrer" 
                           className="flex items-center opacity-0 group-hover:opacity-100 text-accent-100 hover:!text-white font-yesteryear text-xl tracking-normal font-normal transition-all duration-300"
                         >
-                          {link.label} <span className="mx-6 opacity-50 font-sans">✦</span>
+                          {link.label}<span>  &nbsp; ↗ &nbsp;</span> 
+                          {/* <span className="mx-6 opacity-50 font-sans">✦</span> */}
                         </a>
                       ))}
                     </div>
