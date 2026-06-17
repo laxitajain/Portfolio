@@ -13,10 +13,10 @@ export default function Page() {
       {/* Home Section */}
       <section id="home" className="container mx-auto flex flex-col py-12">
         <div className="w-full flex flex-col lg:flex-row lg:items-center justify-between">
-          <div className="flex flex-col justify-center text-center lg:text-left lg:w-1/2">
+          <div className="flex flex-col justify-center text-center lg:text-left lg:w-1/2 w-full max-w-full">
             <h3 className="mb-6 text-xl sm:text-xl font-bold font-title-big leading-tight lg:text-3xl">
-              <span className="text-accent-50 flex">
-                Hi, I&#39;m a&nbsp;
+              <span className="text-accent-50 flex flex-wrap justify-center lg:justify-start items-center gap-x-2">
+                <span>Hi, I&#39;m a</span>
                 <span className="text-secondary-10">
                   <CustomTypewriter />
                 </span>
@@ -30,7 +30,7 @@ export default function Page() {
               <br></br>This page serves as an introduction to my work! :)
             </p>
             
-            <div className="relative mt-4 mb-4 ml-[-1rem] sm:ml-[-1.5rem] flex items-stretch filter drop-shadow-lg">
+            <div className="relative mt-4 mb-4 ml-[-1rem] sm:ml-[-1.5rem] flex items-stretch filter drop-shadow-lg min-w-0 w-full max-w-full">
               {/* 3D Fold under the left side */}
               <div 
                 className="absolute left-0 -bottom-2 w-4 sm:w-6 h-2 bg-secondary-80" 
@@ -38,13 +38,13 @@ export default function Page() {
               ></div>
               
               {/* Stationary FEATURED badge */}
-              <div className="bg-secondary-70 text-white font-bold px-4 sm:px-6 py-1.5 flex items-center z-10 tracking-widest text-xs sm:text-sm">
+              <div className="bg-secondary-70 text-white font-bold px-4 sm:px-6 py-1.5 flex items-center z-10 tracking-widest text-xs sm:text-sm shrink-0">
                 FEATURED
               </div>
 
               {/* Scrolling Marquee Area */}
               <div 
-                className="flex-1 flex overflow-hidden bg-secondary-70 py-1.5 group transition-all duration-300"
+                className="flex-1 flex overflow-hidden bg-secondary-70 py-1.5 group transition-all duration-300 min-w-0"
                 style={{ 
                   clipPath: "polygon(0 0, 100% 0, calc(100% - 1.25rem) 50%, 100% 100%, 0 100%)" 
                 }}

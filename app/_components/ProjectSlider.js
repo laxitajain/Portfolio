@@ -80,12 +80,12 @@ export default function ProjectSlider() {
 
       <ul
         ref={scrollRef}
-        className="scrollable flex flex-col sm:flex-row overflow-x-auto sm:space-x-12 space-y-8 scrollbar-hide py-4"
+        className="scrollable flex flex-row overflow-x-auto space-x-6 sm:space-x-12 scrollbar-hide py-4 snap-x snap-mandatory"
       >
         {projects.map((project) => (
           <li
             key={project.title}
-            className="p-2 text-xl min-w-[150px] max-w-lg flex-shrink-0 text-center"
+            className="p-2 text-xl w-[85vw] sm:w-[450px] max-w-lg flex-shrink-0 text-center snap-center"
           >
             <h1 className="text-3xl text-accent-100">{project.title}</h1>
             <p className="text-[1rem] mt-2 text-accent-30">

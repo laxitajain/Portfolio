@@ -30,10 +30,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` ${dancing.variable} bg-primary-90 text-accent-100 min-h-screen flex flex-col antialiased relative`}
+        className={` ${dancing.variable} bg-primary-90 text-accent-100 min-h-screen flex flex-col antialiased relative overflow-x-hidden`}
       >
         <Header />
-        <div className="flex-1 mt-8 px-4 pt-32 py-6 grid mb-4">
+        <div className="flex-1 mt-8 px-4 pt-32 py-6 flex flex-col mb-4">
           <main className="max-w-7xl  mx-auto w-full">{children}</main>
         </div>
         <Footer />

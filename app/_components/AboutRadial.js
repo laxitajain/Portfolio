@@ -46,7 +46,7 @@ export default function AboutRadial() {
         ))}
       </div>
 
-      <div className="flex flex-col sm:flex-row relative min-h-[600px] overflow-visible">
+      <div className="flex flex-col sm:flex-row relative min-h-[600px] overflow-visible min-w-0 max-w-full w-full">
         {/* Desktop view: Radial Ring Navigation */}
         <div className="hidden sm:block relative w-[20%] shrink-0">
           {/* The ring */}
@@ -105,7 +105,7 @@ export default function AboutRadial() {
         </div>
 
         {/* Content Panel */}
-        <div className="w-full sm:w-[80%] sm:pl-8 relative z-10">
+        <div className="w-full sm:w-[80%] sm:pl-8 relative z-10 min-w-0 max-w-full">
           <AnimatePresence mode="wait">
             <motion.div
               key={selectedId}
