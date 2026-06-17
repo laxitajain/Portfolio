@@ -23,10 +23,11 @@ export default function Page() {
               </span>
             </h3>
             <p className="mb-6 text-base sm:text-lg md:text-md font-body-1 text-justify font-medium leading-7 text-accent-50">
-              I&apos;m a 20-year-old aspiring software developer. With experience in the MERN stack, my skills in Next.js and backend development have been honed over the past year.
-              I have dedicated my time to understanding deep learning fundamentals from the grassroots level.
-              Solving the minor and major inconveniences I face in daily life using these learnings brings my efforts to fruition. I have a diverse portfolio that includes bootcamps attended, scholars&apos; fellowships, research work, academic triumph, and open-source contributions.
-              This page serves as an introduction to my work! :)
+              I&apos;m a 20-year-old software developer. With experience in the MERN stack, my skills in Next.js and backend development have been honed over the past years.
+              I like to understand things from the grassroots level and believe that mastering fundamentals is the key to building great systems.
+              Solving the minor and major inconveniences in my life using tech learnings gives me serotonin!
+               {/* I have a diverse portfolio that includes bootcamps, scholars&apos; fellowships, research journey, academic milestones, and open-source contributions. */} 
+              <br></br>This page serves as an introduction to my work! :)
             </p>
             
             <div className="relative mt-4 mb-4 ml-[-1rem] sm:ml-[-1.5rem] flex items-stretch filter drop-shadow-lg">
@@ -62,7 +63,7 @@ export default function Page() {
                           rel="noopener noreferrer" 
                           className="flex items-center opacity-0 group-hover:opacity-100 text-accent-100 hover:!text-white font-yesteryear text-xl tracking-normal font-normal transition-all duration-300"
                         >
-                          {link.label}<span>  &nbsp; ↗ &nbsp;</span> 
+                          {link.label}<span> &nbsp; &nbsp; ↗ &nbsp; &nbsp;</span> 
                           {/* <span className="mx-6 opacity-50 font-sans">✦</span> */}
                         </a>
                       ))}

@@ -135,17 +135,9 @@ function AboutMeContent() {
     <div>
       <h3 className="text-2xl font-bold text-accent-40 mb-6">About me</h3>
       <div className="text-accent-30 text-lg leading-7 text-justify mb-12">
-        I am a pre-final year student in B.Tech., Computer Science who relishes
-        learning new things. Focused on readily honing my skills in
-        problem-solving, I have solved 700+ questions till date. My skillset is
-        diverse with modern web frameworks (like NextJS), a knack for CLI utilities
-        and avid interest in Machine Learning. I spend most of my time studying
-        algorithms, reading research in AI or contributing to open-source. With a
-        3.97/4.00 CGPA (I have got to flex it somewhere XD), I have maintained a
-        good academic track record. Beyond tech, I am an avid reader, a comic
-        fanatic, an occasional writer, a philosophy nerd and a personal finance
-        enthusiast! I value integrity and enjoy engaging in intellectual
-        conversations! :)
+        I am now in my final year of B.Tech. in Computer Science! Throughout my college years, I have practiced Data Structures and Algorithms rigorously and have solved 900+ problems till date. I have studied frontend and backend technologies, and converted those learnings into implementation via several of my <a href="./#projects">projects.</a> I have solid experience in integrating AI into systems and applications via hackathons and internship projects. Recently, I have taken an interest in cloud native technologies and have quickly realised their importance and relevance moving forward~
+        Beyond tech, I am an avid reader, a comic fanatic, a writer and a philosophy nerd! I value
+        integrity and enjoy engaging in meaningful conversations! :)
       </div>
 
       <h3 className="text-3xl sm:text-4xl font-bold font-yesteryear tracking-wider text-accent-40 mb-6 mt-8">
