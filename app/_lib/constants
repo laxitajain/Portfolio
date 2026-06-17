@@ -203,6 +203,16 @@ export const projects = [
     github: "https://github.com/laxitajain/brain-tumor-detection-classical-ip",
   },
   {
+    title: "Linux Terminal-based portfolio",
+    description:
+      "An interactive Linux terminal-inspired portfolio where visitors navigate using real shell commands like cd, ls, cat, and tree instead of traditional menus. Features a virtual filesystem, hidden collectibles, command history, easter eggs, and a custom CLI experience built entirely with HTML, CSS, and JavaScript.",
+    src: "/ld.png",
+    techStack: ["HTML, CSS, JavaScript"],
+    type: "live",
+    demo: "https://laxita.dev",
+    github: "https://github.com/laxitajain/.dev",
+  },
+  {
     title: "Dragonfruit NL-to-SQL TUI IDE",
     description:
       "A minimalist TUI that takes natural language (english) queries from the user and converts these into SQL queries which can be executed in place with a robust IDE support.",
