@@ -6,6 +6,7 @@ import BlogCard from "./_components/BlogCard";
 import Contact from "./_components/Contact";
 import { blogCards } from "@/app/_lib/constants";
 import AboutRadial from "./_components/AboutRadial";
+import WavyBanner from "./_components/WavyBanner";
 
 export default function Page() {
   return (
@@ -29,49 +30,6 @@ export default function Page() {
                {/* I have a diverse portfolio that includes bootcamps, scholars&apos; fellowships, research journey, academic milestones, and open-source contributions. */} 
               <br></br>This page serves as an introduction to my work! :)
             </p>
-            
-            <div className="relative mt-4 mb-4 ml-[-1rem] sm:ml-[-1.5rem] flex items-stretch filter drop-shadow-lg min-w-0 w-full max-w-full">
-              {/* 3D Fold under the left side */}
-              <div 
-                className="absolute left-0 -bottom-2 w-4 sm:w-6 h-2 bg-secondary-80" 
-                style={{ clipPath: "polygon(100% 0, 0 0, 100% 100%)" }}
-              ></div>
-              
-              {/* Stationary FEATURED badge */}
-              <div className="bg-secondary-70 text-white font-bold px-4 sm:px-6 py-1.5 flex items-center z-10 tracking-widest text-xs sm:text-sm shrink-0">
-                FEATURED
-              </div>
-
-              {/* Scrolling Marquee Area */}
-              <div 
-                className="flex-1 flex overflow-hidden bg-secondary-70 py-1.5 group transition-all duration-300 min-w-0"
-                style={{ 
-                  clipPath: "polygon(0 0, 100% 0, calc(100% - 1.25rem) 50%, 100% 100%, 0 100%)" 
-                }}
-              >
-                <div className="flex whitespace-nowrap animate-marquee items-center">
-                  {[...Array(10)].map((_, i) => (
-                    <div key={i} className="flex items-center">
-                      {[
-                        { label: "Check out my Codolio Profile", href: "https://codolio.com/profile/lax" },
-                        // Add more links here in the future!
-                      ].map((link, idx) => (
-                        <a 
-                          key={idx}
-                          href={link.href}
-                          target="_blank" 
-                          rel="noopener noreferrer" 
-                          className="flex items-center opacity-0 group-hover:opacity-100 text-accent-100 hover:!text-white font-yesteryear text-xl tracking-normal font-normal transition-all duration-300"
-                        >
-                          {link.label}<span> &nbsp; &nbsp; ↗ &nbsp; &nbsp;</span> 
-                          {/* <span className="mx-6 opacity-50 font-sans">✦</span> */}
-                        </a>
-                      ))}
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </div>
           </div>
           <div className="flex justify-center lg:w-1/2 lg:justify-end mt-8 lg:mt-0">
             <Image
@@ -82,6 +40,11 @@ export default function Page() {
               className="rounded-2xl max-w-full h-auto"
             />
           </div>
+        </div>
+
+        {/* Wavy Banner positioned perfectly within the homepage section */}
+        <div className="mt-4 md:mt-2 w-full z-0">
+          <WavyBanner />
         </div>
       </section>
 
