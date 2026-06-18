@@ -9,8 +9,8 @@ A sleek, highly customizable, and interactive personal developer portfolio. Buil
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-<img width="2125" height="1086" alt="image" src="https://github.com/user-attachments/assets/8c77bdea-9816-46eb-a692-c7fb40662383" />
-<img width="2157" height="1133" alt="image" src="https://github.com/user-attachments/assets/d4e2950c-c8e6-4429-baa3-721442e00c7c" />
+<!-- <img width="2125" height="1086" alt="image" src="https://github.com/user-attachments/assets/8c77bdea-9816-46eb-a692-c7fb40662383" />
+<img width="2157" height="1133" alt="image" src="https://github.com/user-attachments/assets/d4e2950c-c8e6-4429-baa3-721442e00c7c" /> -->
 
 
 
