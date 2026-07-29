@@ -76,16 +76,7 @@ export default function WavyBanner() {
                 rel="noopener noreferrer" 
                 className="hover:fill-white transition-colors duration-300"
               >
-                Check out my Codolio Profile ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </a>
-               <a 
-                key={i} 
-                href="https://ygc.sachinchaurasiya.dev/laxitajain" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:fill-white transition-colors duration-300"
-              >
-                GitHub Stats ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                Check out my Codolio Profile ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GitHub Stats ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
               </a>
             ))}
           </textPath>
