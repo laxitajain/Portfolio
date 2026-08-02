@@ -66,15 +66,6 @@ export const achievements = [
 
 export const experience = [
   {
-    company: "TransCybernetics",
-    role: "Software Engineer Intern",
-    dates: "December 2025 - March 2026",
-    location: "India",
-    technologies: ["Next.js", "Tailwind CSS", "Zod", "Shadcn UI", "MongoDB", "Node.js"],
-    description:
-      "Worked in the Software Development Team with a modern tech stack involving Next.js, Tailwind CSS, Zod, Shadcn UI, MongoDB and Node.js. Assisted in simplifying backend logics, implementing robust authentication and improving UI/UX.",
-  },
-  {
     company: "1XL Universe",
     role: "Software Developer Intern",
     dates: "May 2026 - July 2026",
@@ -82,6 +73,15 @@ export const experience = [
     technologies: ["Next.js", "Supabase", "AI Integrations", "Chrome Extension API"],
     description:
       "Developed an AI-powered internal training and communication quality platform focused on role-based assessments, analytics, and AI-assisted feedback systems. Worked with Next.js, Tailwind CSS, backend APIs, and AI integrations for quiz generation and performance analysis. Participated in Agile workflows, daily stand-up meetings, and collaborative development with cross-functional teams. Gained exposure to large-scale international business operations and real-world product development.",
+  },
+  {
+    company: "TransCybernetics",
+    role: "Software Engineer Intern",
+    dates: "December 2025 - March 2026",
+    location: "India",
+    technologies: ["Next.js", "Tailwind CSS", "Zod", "Shadcn UI", "MongoDB", "Node.js"],
+    description:
+      "Worked in the Software Development Team with a modern tech stack involving Next.js, Tailwind CSS, Zod, Shadcn UI, MongoDB and Node.js. Assisted in simplifying backend logics, implementing robust authentication and improving UI/UX.",
   },
 ];
 
@@ -207,7 +207,7 @@ export const projects = [
     description:
       "An interactive Linux terminal-inspired portfolio where visitors navigate using real shell commands like cd, ls, cat, and tree instead of traditional menus. Features a virtual filesystem, hidden collectibles, command history, easter eggs, and a custom CLI experience built entirely with HTML, CSS, and JavaScript.",
     src: "/ld.png",
-    techStack: ["HTML, CSS, JavaScript"],
+    techStack: ["HTML", "CSS", "JavaScript"],
     type: "live",
     demo: "https://laxita.dev",
     github: "https://github.com/laxitajain/.dev",

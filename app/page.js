@@ -76,10 +76,10 @@ export default function Page() {
       {/* Contact Section */}
       <section id="contact" className="container mx-auto pb-12 scroll-mt-24">
         <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Contact</h2>
-        <h3 className="text-accent-40 text-center text-lg sm:text-xl mb-8">
+        {/* <h3 className="text-accent-40 text-center text-lg sm:text-xl mb-8">
           Want to collaborate, have project ideas, or curious about something? Hit
           me up!
-        </h3>
+        </h3> */}
         <Contact />
       </section>
     </main>

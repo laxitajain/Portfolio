@@ -38,11 +38,11 @@ export default function Contact() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="max-w-3xl p-4 rounded-md mx-auto space-y-4 w-full"
+      className="max-w-3xl p-4 rounded-md mx-auto mb-4 space-y-4 w-full"
     >
       <input
         type="email"
-        placeholder="your mail"
+        placeholder=" enter your mail"
         value={email}
         required
         onChange={(e) => setEmail(e.target.value)}
@@ -50,7 +50,7 @@ export default function Contact() {
       />
 
       <textarea
-        placeholder="message"
+        placeholder=" message"
         value={message}
         required
         onChange={(e) => setMessage(e.target.value)}
