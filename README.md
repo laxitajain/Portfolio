@@ -1,4 +1,4 @@
-# Developer Portfolio Website
+# Personal Portfolio Website
 
 A sleek, highly customizable, and interactive personal developer portfolio. Built to showcase projects, skills, experience, and blogs in a deeply engaging, beautiful UI with rich animations and strict mobile responsiveness.
 
