@@ -1,4 +1,4 @@
-# Personal Portfolio Website
+# Developer Portfolio Website
 
 A sleek, highly customizable, and interactive personal developer portfolio. Built to showcase projects, skills, experience, and blogs in a deeply engaging, beautiful UI with rich animations and strict mobile responsiveness.
 
@@ -8,6 +8,10 @@ A sleek, highly customizable, and interactive personal developer portfolio. Buil
 ![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
 ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+<img width="2217" height="1154" alt="image" src="https://github.com/user-attachments/assets/1caf769e-6d07-424f-9458-111219194191" />
+
+
 
 <!-- <img width="2125" height="1086" alt="image" src="https://github.com/user-attachments/assets/8c77bdea-9816-46eb-a692-c7fb40662383" />
 <img width="2157" height="1133" alt="image" src="https://github.com/user-attachments/assets/d4e2950c-c8e6-4429-baa3-721442e00c7c" /> -->
