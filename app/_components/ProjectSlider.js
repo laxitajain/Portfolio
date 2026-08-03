@@ -7,6 +7,8 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "./Button";
 
+const FILM_LABELS = ["Portfolio", "35mm", "Dev", "★", "Build"];
+
 export default function ProjectSlider() {
   const scrollRef = useRef(null);
 
@@ -34,7 +36,7 @@ export default function ProjectSlider() {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - slider.offsetLeft;
-      const walk = (x - startX) * 1.5; // Adjust scroll speed
+      const walk = (x - startX) * 1.5;
       slider.scrollLeft = scrollLeftPos - walk;
     };
 
@@ -42,8 +44,6 @@ export default function ProjectSlider() {
     slider.addEventListener("mouseleave", mouseLeaveOrUp);
     slider.addEventListener("mouseup", mouseLeaveOrUp);
     slider.addEventListener("mousemove", mouseMove);
-
-    // Initial class
     slider.classList.add("cursor-grab");
 
     return () => {
@@ -55,97 +55,122 @@ export default function ProjectSlider() {
   }, []);
 
   const scrollLeft = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: -400, behavior: "smooth" });
-    }
+    scrollRef.current?.scrollBy({ left: -500, behavior: "smooth" });
   };
 
   const scrollRight = () => {
-    if (scrollRef.current) {
-      scrollRef.current.scrollBy({ left: 400, behavior: "smooth" });
-    }
+    scrollRef.current?.scrollBy({ left: 500, behavior: "smooth" });
   };
 
   return (
-    <div className="relative mt-2 ml-0 mb-4 group">
-      <h2 className="text-2xl text-accent-400 mb-7"></h2>
-
+    <div className="relative left-1/2 -translate-x-1/2 w-screen max-w-[100vw] group">
       <button
         onClick={scrollLeft}
-        className="hidden sm:flex absolute left-[-4rem] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-secondary-50 rounded-full items-center justify-center text-primary-90 hover:scale-110 hover:bg-secondary-40 transition-transform opacity-0 group-hover:opacity-100"
+        className="hidden sm:flex absolute left-4 lg:left-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-secondary-50 rounded-full items-center justify-center text-accent-100 hover:scale-110 hover:bg-secondary-30 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
         aria-label="Scroll left"
       >
-        <ChevronLeft size={28} strokeWidth={3} />
+        <ChevronLeft size={26} strokeWidth={3} />
       </button>
 
-      <ul
-        ref={scrollRef}
-        className="scrollable flex flex-row overflow-x-auto space-x-6 sm:space-x-12 scrollbar-hide py-4 snap-x snap-mandatory"
-      >
-        {projects.map((project) => (
-          <li
-            key={project.title}
-            className="p-2 text-xl w-[85vw] sm:w-[450px] max-w-lg flex-shrink-0 text-center snap-center"
-          >
-            <h1 className="text-3xl text-accent-100">{project.title}</h1>
-            <p className="text-[1rem] mt-2 text-accent-30">
-              {project.description}
-            </p>
-            <div className="bg-primary-100 rounded-3xl mt-4 p-3">
-              <Image
-                src={project.src}
-                alt={project.title}
-                width={500}
-                height={500}
-                className="rounded-xl"
-              ></Image>
+      <div ref={scrollRef} className="film-reel-viewport scrollable scrollbar-hide">
+        <div className="film-strip">
+          <div className="film-edge" aria-hidden="true">
+            <div className="film-edge-text">
+              {FILM_LABELS.map((label) => (
+                <span key={label}>{label}</span>
+              ))}
             </div>
-            <div className="flex flex-col justify-between gap-y-4 mt-2">
-              <ul className="flex flex-wrap justify-center gap-y-1.5 gap-x-2 w-full mx-auto">
-                {project.techStack.map((technology) => (
-                  <li key={technology}>
-                    <Button type="secondary">{technology}</Button>
-                  </li>
-                ))}
-              </ul>
-              <ul className="flex justify-center gap-x-1.5 w-full mx-auto my-2 sm:m-4 items-center">
-                {project.github && (
-                  <li>
-                    <Link href={project.github} target="_blank">
-                      <Button type="tertiary">
-                        <img src="/icons/icons8-github-logo.svg" alt="GitHub"></img>SEE MORE
-                      </Button>
-                    </Link>
-                  </li>
-                )}
-                {project.type === "live" && (
-                  <li>
-                    <Link href={project.demo} target="_blank">
-                      <Button type="tertiary">
-                        VIEW PROJECT<img src="/diagonal-arrow (1).png" alt="Demo"></img>
-                      </Button>
-                    </Link>
-                  </li>
-                )}
-                {project.type === "report" && (
-                  <li>
-                    <Link href={project.demo} target="_blank">
-                      <Button type="tertiary">VIEW REPORT</Button>
-                    </Link>
-                  </li>
-                )}
-              </ul>
+          </div>
+
+          <ul className="film-frames">
+            {projects.map((project) => (
+              <li key={project.title} className="film-frame">
+                <article className="film-frame-inner">
+                  <div className="film-frame-content">
+                    <header>
+                      <h3 className="text-2xl sm:text-3xl font-yesteryear font-bold text-accent-100 leading-tight">
+                        {project.title}
+                      </h3>
+                      <p className="text-sm sm:text-[0.95rem] mt-2 text-accent-30 leading-relaxed">
+                        {project.description}
+                      </p>
+                    </header>
+
+                    <div className="film-image-wrap">
+                      <Image
+                        src={project.src}
+                        alt={project.title}
+                        width={500}
+                        height={320}
+                        className="w-full h-auto object-cover"
+                      />
+                    </div>
+
+                    <ul className="flex flex-wrap gap-1.5 mt-3">
+                      {project.techStack.map((technology) => (
+                        <li key={technology}>
+                          <Button type="secondary">{technology}</Button>
+                        </li>
+                      ))}
+                    </ul>
+
+                    <ul className="flex flex-wrap items-center gap-x-2 gap-y-2 mt-4 pt-3 border-t border-primary-80">
+                      {project.github && (
+                        <li>
+                          <Link href={project.github} target="_blank">
+                            <Button type="tertiary">
+                              <img
+                                src="/icons/icons8-github-logo.svg"
+                                alt="GitHub"
+                              />
+                              SEE MORE
+                            </Button>
+                          </Link>
+                        </li>
+                      )}
+                      {project.type === "live" && (
+                        <li>
+                          <Link href={project.demo} target="_blank">
+                            <Button type="tertiary">
+                              VIEW PROJECT
+                              <img
+                                src="/diagonal-arrow (1).png"
+                                alt="Demo"
+                              />
+                            </Button>
+                          </Link>
+                        </li>
+                      )}
+                      {project.type === "report" && (
+                        <li>
+                          <Link href={project.demo} target="_blank">
+                            <Button type="tertiary">VIEW REPORT</Button>
+                          </Link>
+                        </li>
+                      )}
+                    </ul>
+                  </div>
+                </article>
+              </li>
+            ))}
+          </ul>
+
+          <div className="film-edge" aria-hidden="true">
+            <div className="film-edge-text">
+              {FILM_LABELS.map((label) => (
+                <span key={`bottom-${label}`}>{label}</span>
+              ))}
             </div>
-          </li>
-        ))}
-      </ul>
+          </div>
+        </div>
+      </div>
 
       <button
         onClick={scrollRight}
-        className="hidden sm:flex absolute right-[-4rem] top-1/2 -translate-y-1/2 z-10 w-12 h-12 bg-secondary-50 rounded-full items-center justify-center text-primary-90 hover:scale-110 hover:bg-secondary-40 transition-transform opacity-0 group-hover:opacity-100"
+        className="hidden sm:flex absolute right-4 lg:right-8 top-1/2 -translate-y-1/2 z-20 w-11 h-11 bg-secondary-50 rounded-full items-center justify-center text-accent-100 hover:scale-110 hover:bg-secondary-30 transition-all opacity-0 group-hover:opacity-100 shadow-lg"
         aria-label="Scroll right"
       >
-        <ChevronRight size={28} strokeWidth={3} />
+        <ChevronRight size={26} strokeWidth={3} />
       </button>
     </div>
   );

@@ -175,7 +175,7 @@ export const projects = [
   {
     title: "DevSync",
     description:
-      "Built a full-stack collaborative project management SaaS with multi-tenant workspaces with JWT authentication, role-based access control, real-time task and comment updates, Redis-backed caching and presence tracking, BullMQ background jobs, full-text search, file attachments, and Dockerized deployment with automated testing and CI workflows.",
+      "A full-stack collaborative project management SaaS with multi-tenant workspaces with role-based access control, real-time task and comment updates, Redis-backed caching and presence tracking, BullMQ background jobs and Dockerized deployment with automated testing and CI workflows.",
     src: "/dv.png",
     techStack: ["Next.js", "TypeScript", "Node.js", "Prisma ORM", "Redis", "Socket.IO", "BullMQ", "Docker", "JWT", "REST APIs"],
     type: "live",
@@ -186,7 +186,7 @@ export const projects = [
     title: "NextBite",
     description:
       "A food redistribution platform to eliminate food waste and improve sustainability in communities. Connects Donors (restaurants, households, cafes) with  surplus food to recipients (NGO's, shelters, individuals) via the platform. Zero waste + Zero delivery model via scheduling pickups for urgency-labelled food.",
-    src: "/nextbite.jpeg",
+    src: "/nextbite.png",
     techStack: ["Next.js", "React.js", "MongoDB", "TailwindCSS", "Leaflet"],
     type: "live",
     demo: "https://next-bite-eta.vercel.app/",
@@ -195,9 +195,9 @@ export const projects = [
   {
     title: "Detecting Brain Tumors from MRI Scans",
     description:
-      "Classical image processing to measure the contribution of preprocessing and morphological steps to segmentation performance, I conducted a comprehensive ablation study using the BraTS dataset. Anisotropic diffusion filtering and top-hat correction can increase Dice similarity by up to 7%, according to the results, highlighting the importance of well-thought-out classical preprocessing in tumor segmentation.",
+      "Classical image processing to measure the contribution of preprocessing and morphological steps to segmentation performance on the BRaTS dataset.",
     src: "/bt.png",
-    techStack: ["Python", "BRaTS Dataset", "Segmentation and Morphological Algorithms"],
+    techStack: ["Python", "Segmentation and Morphological Algorithms"],
     type: "live",
     demo: "https://drive.google.com/drive/folders/14D0MdPgdtskX--WHX4fQWanAk4actPdH",
     github: "https://github.com/laxitajain/brain-tumor-detection-classical-ip",
@@ -225,7 +225,7 @@ export const projects = [
   {
     title: "Nirog",
     description:
-      "A standalone JAVA application, for a seamless Hospital Management System. Built using Java Swing GUI and JAVA for backend. Xammp and MySQL were utilisied for database connectivity. Offers seperate doctors' and patients' modules for storing details of them. Efficiency using one-click patient-history retreival and addition of new entry for each patient visit.",
+      "A standalone JAVA application, for a seamless Hospital Management System. Built using Java Swing GUI and JAVA for backend. Xammp and MySQL were utilisied for database connectivity.",
     src: "/Nirog.png",
     type: "report",
     techStack: ["Java Swing", "MySQL"],
