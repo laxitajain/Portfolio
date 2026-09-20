@@ -51,7 +51,7 @@ export default function Page() {
       <AboutRadial />
 
       {/* Projects Section */}
-      <section id="projects" className="container mx-auto scroll-mt-24">
+      <section id="projects" className="container mx-auto -mt-10 scroll-mt-24">
         <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Projects</h2>
         <ProjectSlider />
       </section>

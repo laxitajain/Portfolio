@@ -24,7 +24,7 @@ export default function AboutRadial() {
   const selectedAngle = selectedItem?.angle || 0;
 
   return (
-    <section id="about" className="container mx-auto pt-4 pb-12 scroll-mt-8">
+    <section id="about" className="container mx-auto pt-4 pb-12 -mb-8 scroll-mt-8">
       <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-12 text-center tracking-wider">
         About & Experience
       </h2>
