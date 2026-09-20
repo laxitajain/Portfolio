@@ -243,14 +243,7 @@ export const blogCards = [
     src: "/blog1.png",
     href: "https://medium.com/@laxitajain912/the-genesis-of-intelligent-prompts-b919118a398a",
   },
-  {
-    title: "Silicon Sisterhood: The Feminine Midas",
-    description:
-      " In recent years, the tech industry has witnessed a significant transformation, with women stepping into roles that were once dominated by men. As we celebrate this shift, it's essential to highlight the contributions, achievements...",
-    // and the ongoing challenges faced by women in tech. This blog post aims to provide a thought-provoking exploration of the 'Silicon Sisterhood', showcasing the strides women are making and the impact they have on the tech landscape. According to a 2023 report by the National Center for Women & Information Technology (NCWIT), women hold approximately 26% of computing jobs in the United States. While this number has increased over the past decade, it still reflects a significant gender gap. Moreover, women of color are particularly underrepresented, making up only 3% of the computing workforce. This disparity highlights the urgent need for systemic change within the industry. Research shows that diversity in tech teams leads to greater innovation and better decision-making. A study by McKinsey found that companies in the top quartile for gender diversity on executive teams were 25% more likely to experience above-average profitability...",
-    src: "/blog2.png",
-    href: "https://laxitajain.blogspot.com/2024/09/silicon-sisterhood-impact-of-feminine.html",
-  },
+  
 ];
 
 export const socialLinks = [

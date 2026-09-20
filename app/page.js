@@ -57,21 +57,24 @@ export default function Page() {
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="container mx-auto scroll-mt-24">
-        <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Blog</h2>
-        <ul className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {blogCards.map((card) => (
-            <li key={card.title}>
-              <BlogCard
-                title={card.title}
-                description={card.description}
-                src={card.src}
-                href={card.href}
-              />
-            </li>
-          ))}
-        </ul>
-      </section>
+<section id="blog" className="container mx-auto scroll-mt-24">
+  <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">
+    Blog
+  </h2>
+
+ <ul className="flex flex-wrap justify-center gap-8">
+  {blogCards.map((card) => (
+    <li key={card.title}>
+      <BlogCard
+        title={card.title}
+        description={card.description}
+        src={card.src}
+        href={card.href}
+      />
+    </li>
+  ))}
+</ul>
+</section>
 
       {/* Contact Section */}
       <section id="contact" className="container mx-auto pb-12 scroll-mt-24">
