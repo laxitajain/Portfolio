@@ -69,15 +69,26 @@ export default function WavyBanner() {
               />
             )}
             {[...Array(40)].map((_, i) => (
-              <a 
-                key={i} 
-                href="https://codolio.com/profile/lax" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="hover:fill-white transition-colors duration-300"
-              >
-                Check out my Codolio Profile ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-              </a>
+              <>
+                <a 
+                  key={i} 
+                  href="https://codolio.com/profile/lax" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:fill-white transition-colors duration-300"
+                  >
+                  Check out my Codolio Profile ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+                <a 
+                  key={i} 
+                  href="https://www.laxita.dev/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:fill-white transition-colors duration-300"
+                  >
+                  Terminal Portfolio! ↗ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </a>
+              </>
             ))}
           </textPath>
         </text>
