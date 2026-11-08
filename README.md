@@ -13,12 +13,7 @@ A sleek, highly customizable, and interactive personal developer portfolio. Buil
   <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-5F3684?style=for-the-badge&logo=javascript&logoColor=FFEAD2" />
 </p>
 
-<img width="2217" height="1154" alt="image" src="https://github.com/user-attachments/assets/1caf769e-6d07-424f-9458-111219194191" />
-
-
-
-<!-- <img width="2125" height="1086" alt="image" src="https://github.com/user-attachments/assets/8c77bdea-9816-46eb-a692-c7fb40662383" />
-<img width="2157" height="1133" alt="image" src="https://github.com/user-attachments/assets/d4e2950c-c8e6-4429-baa3-721442e00c7c" /> -->
+<img width="2104" height="1112" alt="image" src="https://github.com/user-attachments/assets/5816f0fe-b17d-4872-aa8e-b7786d901080" />
 
 
 
@@ -27,7 +22,7 @@ A sleek, highly customizable, and interactive personal developer portfolio. Buil
 This portfolio was designed from the ground up to be **100% data-driven and effortlessly customizable**. You don't need to dig through hundreds of components to change your information!
 
 All of the website's content is managed centrally via a single configuration file:
-**app/_lib/constants.js**
+**app/_lib/constants**
 
 Simply open that file to instantly update:
 - **Projects & Tech Stacks:** Add your latest projects, demo links, and GitHub repositories.
