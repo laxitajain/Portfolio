@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 function Logo({ location }) {
@@ -11,7 +10,9 @@ function Logo({ location }) {
             : "bg-transpaent border-[1px] border-accent-100 "
         }  rounded-full text-md p-2.5 `}
       >
-        <Image width={50} height={50} src="/logo.png" alt="Logo" className="" />
+        <span className="flex h-[50px] w-[50px] items-center justify-center font-yesteryear text-4xl leading-none text-accent-100">
+          LJ
+        </span>
       </span>
       Laxita Jain
     </Link>
