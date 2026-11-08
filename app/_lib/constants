@@ -262,6 +262,11 @@ export const socialLinks = [
     link: "https://leetcode.com/u/olafdragon/",
     alt: "Leetcode",
   },
+  {
+    icon: "/icons/x-logo.svg",
+    link: "https://x.com/laxitaaaaa",
+    alt: "X",
+  },
   // {
   //   icon: "/icons/geeksforgeeks-svgrepo-com (1).svg",
   //   link: "https://www.geeksforgeeks.org/user//",
