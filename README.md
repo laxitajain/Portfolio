@@ -1,13 +1,17 @@
-# Personal Portfolio Website
+<h1 align="center">Personal Portfolio Website</h1>
 
+<p align="center">
 A sleek, highly customizable, and interactive personal developer portfolio. Built to showcase projects, skills, experience, and blogs in a deeply engaging, beautiful UI with rich animations and strict mobile responsiveness.
+</p>
 
-![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=for-the-badge&logo=framer&logoColor=blue)
-![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+<p align="center">
+  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-5F3684?style=for-the-badge&logo=nextdotjs&logoColor=FFEAD2" />
+  <img alt="React" src="https://img.shields.io/badge/React-5F3684?style=for-the-badge&logo=react&logoColor=FFEAD2" />
+  <img alt="Tailwind CSS" src="https://img.shields.io/badge/Tailwind_CSS-5F3684?style=for-the-badge&logo=tailwindcss&logoColor=FFEAD2" />
+  <img alt="Framer Motion" src="https://img.shields.io/badge/Framer_Motion-5F3684?style=for-the-badge&logo=framer&logoColor=FFEAD2" />
+  <img alt="Vercel" src="https://img.shields.io/badge/Vercel-5F3684?style=for-the-badge&logo=vercel&logoColor=FFEAD2" />
+  <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-5F3684?style=for-the-badge&logo=javascript&logoColor=FFEAD2" />
+</p>
 
 <img width="2217" height="1154" alt="image" src="https://github.com/user-attachments/assets/1caf769e-6d07-424f-9458-111219194191" />
 
