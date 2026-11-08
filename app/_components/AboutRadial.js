@@ -7,7 +7,7 @@ import Timeline from "./Timeline";
 import dynamic from "next/dynamic";
 import { experience, languages, frameworks, platforms, achievements } from "@/app/_lib/constants";
 
-const GitHubCalendar = dynamic(() => import("react-github-calendar").then((mod) => mod.GitHubCalendar), { ssr: false });
+const ContributionCalendar = dynamic(() => import("./ContributionCalendar"), { ssr: false });
 
 const navItems = [
   { id: "about", label: "About me", angle: -40 },
@@ -144,16 +144,7 @@ function AboutMeContent() {
         Days I <span className="text-secondary-50">Code</span>
       </h3>
       <div className="w-full overflow-x-auto scrollbar-hide py-4">
-        <GitHubCalendar 
-          username="laxitajain" 
-          blockSize={12} 
-          blockMargin={4} 
-          colorScheme="dark" 
-          theme={{
-            dark: ['#E2E8F0', '#6F3F9A', '#A05ADC', '#B178E2', '#C397EA']
-          }}
-          fontSize={14}
-        />
+        <ContributionCalendar />
       </div>
     </div>
   );
