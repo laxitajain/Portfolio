@@ -69,6 +69,9 @@ export default function ProjectSlider() {
     );
   };
 
+  // Clicking a link on a card should follow the link, not open the pop-up
+  const stopCardClick = (event) => event.stopPropagation();
+
   return (
     <div className="relative left-1/2 -translate-x-1/2 w-screen max-w-[100vw] group">
       <button
@@ -99,6 +102,8 @@ export default function ProjectSlider() {
                   aria-label={`View ${project.title} project description`}
                   onClick={() => toggleProjectDescription(project)}
                   onKeyDown={(event) => {
+                    // Only react to keys pressed on the card itself, not on the links inside it
+                    if (event.target !== event.currentTarget) return;
                     if (event.key === "Enter" || event.key === " ") {
                       event.preventDefault();
                       toggleProjectDescription(project);
@@ -132,11 +137,10 @@ export default function ProjectSlider() {
 
                     <ul
                       className="flex flex-wrap items-center justify-center gap-x-2 gap-y-2 mt-4 pt-3 border-t border-primary-80"
-                      onClick={(event) => event.stopPropagation()}
                     >
                       {project.github && (
                         <li>
-                          <Link href={project.github} target="_blank">
+                          <Link href={project.github} target="_blank" onClick={stopCardClick}>
                             <Button type="tertiary">
                               <img
                                 src="/icons/icons8-github-logo.svg"
@@ -149,7 +153,7 @@ export default function ProjectSlider() {
                       )}
                       {project.type === "live" && (
                         <li>
-                          <Link href={project.demo} target="_blank">
+                          <Link href={project.demo} target="_blank" onClick={stopCardClick}>
                             <Button type="tertiary">
                               VIEW PROJECT
                               <img
@@ -162,7 +166,7 @@ export default function ProjectSlider() {
                       )}
                       {project.type === "report" && (
                         <li>
-                          <Link href={project.demo} target="_blank">
+                          <Link href={project.demo} target="_blank" onClick={stopCardClick}>
                             <Button type="tertiary">VIEW REPORT</Button>
                           </Link>
                         </li>
@@ -194,7 +198,7 @@ export default function ProjectSlider() {
 
       {selectedProject && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4"
           role="presentation"
           onClick={() => setSelectedProject(null)}
         >
