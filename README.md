@@ -46,3 +46,12 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Deployment
 
 This app is production-ready and fully optimized for seamless deployment on [Vercel](https://vercel.com).
+
+## License
+
+This project is licensed under the
+[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
+
+You are free to share, adapt, modify, and use this project
+for any purpose, including commercially, provided appropriate
+attribution is given to me.
