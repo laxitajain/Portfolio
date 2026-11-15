@@ -35,7 +35,7 @@ export default function AboutRadial() {
           <button
             key={item.id}
             onClick={() => setSelectedId(item.id)}
-            className={`whitespace-nowrap px-6 py-2 rounded-full font-medium transition-colors ${
+            className={`whitespace-nowrap px-7 py-2.5 text-lg rounded-full font-medium transition-colors ${
               selectedId === item.id
                 ? "bg-accent-50 text-primary-90"
                 : "bg-primary-80 text-accent-40"
@@ -51,7 +51,7 @@ export default function AboutRadial() {
         <div className="hidden sm:block relative w-[20%] shrink-0">
           {/* The ring */}
           <motion.div
-            className="absolute rounded-full border-[3px] border-secondary-10 shadow-[0_0_15px_rgba(160,90,220,0.1)]"
+            className="absolute rounded-full border-4 border-secondary-10 shadow-[0_0_15px_rgba(160,90,220,0.1)]"
             style={{
               width: 800,
               height: 800,
@@ -88,7 +88,7 @@ export default function AboutRadial() {
                       }`}
                     >
                       <div
-                        className={`px-5 py-2 rounded-full font-semibold transition-all duration-300 ${
+                        className={`whitespace-nowrap px-6 py-2.5 text-lg rounded-full font-semibold transition-all duration-300 ${
                           isActive
                             ? "bg-accent-50 text-primary-90 shadow-[0_0_20px_theme('colors.accent.50')]"
                             : "bg-primary-80 text-accent-30 hover:bg-primary-70"
