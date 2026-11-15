@@ -6,13 +6,6 @@ export const navLinks = [
   { to: "#contact", label: "Reach out" },
 ];
 
-export const sideNavLinks = [
-  { to: "/about", label: "About" },
-  { to: "/about/achievements", label: "Achievements" },
-  { to: "/about/skills", label: "Skills" },
-  { to: "/about/experience", label: "Experience" },
-];
-
 export const educationTimeline = [
   {
     qualification: "Bachelor Of Technology, Computer Science",
