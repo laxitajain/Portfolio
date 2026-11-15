@@ -199,7 +199,7 @@ export default function ProjectSlider() {
           onClick={() => setSelectedProject(null)}
         >
           <section
-            className="relative w-full max-w-xl rounded-lg border border-primary-70 bg-secondary-80 p-6 shadow-2xl sm:p-8"
+            className="relative w-full max-w-xl rounded-lg bg-secondary-10 p-6 shadow-2xl sm:p-8"
             role="dialog"
             aria-modal="true"
             aria-labelledby="project-description-title"
@@ -207,7 +207,7 @@ export default function ProjectSlider() {
           >
             <button
               type="button"
-              className="absolute right-3 top-3 rounded-full p-2 text-accent-30 transition-colors hover:bg-primary-90 hover:text-accent-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-accent-30"
+              className="absolute right-3 top-3 rounded-full p-2 text-primary-100 transition-colors hover:bg-secondary-30 focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-100"
               onClick={() => setSelectedProject(null)}
               aria-label="Close project description"
             >
@@ -215,11 +215,11 @@ export default function ProjectSlider() {
             </button>
             <h2
               id="project-description-title"
-              className="pr-10 text-3xl font-yesteryear font-bold leading-tight text-accent-100 sm:text-4xl"
+              className="pr-10 text-3xl font-yesteryear font-bold leading-tight text-primary-100 sm:text-4xl"
             >
               {selectedProject.title}
             </h2>
-            <p className="mt-5 text-sm leading-relaxed text-accent-30 sm:text-base">
+            <p className="mt-5 text-sm leading-relaxed text-primary-100 sm:text-base">
               {selectedProject.description}
             </p>
           </section>
