@@ -1,30 +1,54 @@
-import Link from "next/link";
-import Logo from "./Logo";
-import { socialLinks } from "@/app/_lib/constants";
-import Image from "next/image";
+const linkClass =
+  "underline underline-offset-2 decoration-accent-100/40 hover:decoration-accent-100 transition-colors";
+
+// The CC icons (from the Creative Commons press kit) are self-hosted: the CC mirror sends no CORS
+// headers, and browsers refuse cross-origin mask images without them. Masking lets them take the text colour.
+function CcIcon({ name }) {
+  const url = `url("/icons/${name}.svg")`;
+  return (
+    <span
+      aria-hidden="true"
+      className="inline-block h-[1em] w-[1em] ml-[0.2em] align-[-0.15em] bg-accent-100"
+      style={{
+        maskImage: url,
+        WebkitMaskImage: url,
+        maskSize: "contain",
+        WebkitMaskSize: "contain",
+        maskRepeat: "no-repeat",
+        WebkitMaskRepeat: "no-repeat",
+        maskPosition: "center",
+        WebkitMaskPosition: "center",
+      }}
+    />
+  );
+}
 
 function Footer() {
   return (
-    <footer className=" bg-primary-100 px-5 py-8">
-      <div className="flex flex-col md:grid md:grid-cols-3 gap-y-10 items-center px-0 max-w-7xl mx-auto gap-x-5">
-        <div className="md:justify-self-start">
-          <Logo location="footer" />
-        </div>
-        <div className="flex flex-row items-center justify-center gap-x-8 md:mt-5">
-          {socialLinks.map((social, index) => (
-            <Link
-              href={social.link}
-              key={index}
-              target="_blank"
-              aria-label={social.alt}
-              className="transition-transform duration-200 hover:-translate-y-1 hover:opacity-80"
-            >
-              <Image src={social.icon} alt={social.alt} height={30} width={30} />
-            </Link>
-          ))}
-        </div>
-        <p className="text-sm font-normal pt-1 md:mt-5 md:justify-self-end text-center md:text-right">
-          Copyright &copy; Laxita Jain 2025, All rights reserved.
+    <footer className=" bg-primary-100 px-5 py-6">
+      <div className="flex items-center justify-center max-w-7xl mx-auto">
+        <p className="text-sm font-normal text-center">
+
+          &copy; 2026 by {" "}
+          <a
+            href="https://github.com/laxitajain"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClass}
+          >
+            Laxita Jain
+          </a>{" "}
+          licensed under{" "}
+          <a
+            href="https://creativecommons.org/licenses/by/4.0/"
+            target="_blank"
+            rel="license noopener noreferrer"
+            className={linkClass}
+          >
+            CC BY 4.0
+          </a>
+          <CcIcon name="cc" />
+          <CcIcon name="cc-by" />
         </p>
       </div>
     </footer>

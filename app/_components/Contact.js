@@ -1,74 +1,36 @@
-"use client";
-
-import { useState } from "react";
+import { socialLinks } from "@/app/_lib/constants";
 
 export default function Contact() {
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-  const [loading, setLoading] = useState(false);
-  const [status, setStatus] = useState(null); // success | error | null
-
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setLoading(true);
-    setStatus(null);
-
-    try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        body: JSON.stringify({ email, message }),
-        headers: { "Content-Type": "application/json" },
-      });
-
-      if (res.ok) {
-        setStatus("success");
-        setEmail("");
-        setMessage("");
-      } else {
-        setStatus("error");
-      }
-    } catch (err) {
-      console.error("Form submission error:", err);
-      setStatus("error");
-    }
-
-    setLoading(false);
-  };
-
   return (
-    <form
-      onSubmit={handleSubmit}
-      className="max-w-3xl p-4 rounded-md mx-auto mb-16 space-y-4 w-full"
-    >
-      <input
-        type="email"
-        placeholder=" enter your mail"
-        value={email}
-        required
-        onChange={(e) => setEmail(e.target.value)}
-        className="w-full p-2 focus:outline-none text-primary-20 bg-primary-100 focus:border-none rounded-lg "
-      />
-
-      <textarea
-        placeholder=" message"
-        value={message}
-        required
-        onChange={(e) => setMessage(e.target.value)}
-        className="w-full resize-none p-2 focus:outline-none text-primary-20 bg-primary-100 rounded-lg min-h-56"
-      />
-
-      <button
-        type="submit"
-        disabled={loading}
-        className={`glossy-button p-2 rounded text-white ${
-          loading ? "bg-primary-50 cursor-not-allowed" : ""
-        }`}
-      >
-        Send
-      </button>
-
-      {status === "success" && alert("Message sent successfully!")}
-      {status === "error" && alert("Something went wrong. Please try again.")}
-    </form>
+    <ul className="flex flex-wrap items-center justify-center gap-x-12 gap-y-8 sm:gap-x-20 max-w-5xl mx-auto my-16 sm:my-20 px-4">
+      {socialLinks.map((social) => (
+        <li key={social.alt}>
+          <a
+            href={social.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={social.alt}
+            title={social.alt}
+            className="block transition-transform duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] hover:-translate-y-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-accent-100"
+          >
+            {/* The icon file is used as a mask so it renders in the lightest shade of the contribution heatmap */}
+            <span
+              aria-hidden="true"
+              className="block h-14 w-14 sm:h-16 sm:w-16 bg-secondary-10"
+              style={{
+                maskImage: `url("${social.icon}")`,
+                WebkitMaskImage: `url("${social.icon}")`,
+                maskSize: "contain",
+                WebkitMaskSize: "contain",
+                maskRepeat: "no-repeat",
+                WebkitMaskRepeat: "no-repeat",
+                maskPosition: "center",
+                WebkitMaskPosition: "center",
+              }}
+            />
+          </a>
+        </li>
+      ))}
+    </ul>
   );
 }

@@ -1,9 +1,9 @@
 export const navLinks = [
   { to: "#home", label: "Home" },
   { to: "#about", label: "About" },
-  { to: "#projects", label: "Projects" },
-  { to: "#blog", label: "Blog" },
-  { to: "#contact", label: "Contact" },
+  { to: "#projects", label: "Work" },
+  // { to: "#blog", label: "Blog" },
+  { to: "#contact", label: "Reach out" },
 ];
 
 export const sideNavLinks = [
@@ -266,6 +266,11 @@ export const socialLinks = [
     icon: "/icons/x-logo.svg",
     link: "https://x.com/laxitaaaaa",
     alt: "X",
+  },
+  {
+    icon: "/icons/discord.svg",
+    link: "https://discord.com/users/1147789641651605605",
+    alt: "Discord",
   },
   // {
   //   icon: "/icons/geeksforgeeks-svgrepo-com (1).svg",

@@ -7,7 +7,7 @@ function Logo({ location }) {
         className={`${
           location == "header"
             ? "bg-primary-100"
-            : "bg-transpaent border-[1px] border-accent-100 "
+            : "bg-primary-90"
         }  rounded-full text-md p-2.5 `}
       >
         <span className="flex h-[50px] w-[50px] items-center justify-center font-yesteryear text-4xl leading-none text-accent-100">

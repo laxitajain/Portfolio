@@ -2,9 +2,9 @@ import CustomTypewriter from "./_components/Typewriter";
 import Image from "next/image";
 import Timeline from "./_components/Timeline";
 import ProjectSlider from "./_components/ProjectSlider";
-import BlogCard from "./_components/BlogCard";
+// import BlogCard from "./_components/BlogCard";
 import Contact from "./_components/Contact";
-import { blogCards } from "@/app/_lib/constants";
+// import { blogCards } from "@/app/_lib/constants";
 import AboutRadial from "./_components/AboutRadial";
 import WavyBanner from "./_components/WavyBanner";
 
@@ -52,12 +52,12 @@ export default function Page() {
 
       {/* Projects Section */}
       <section id="projects" className="container mx-auto -mt-10 scroll-mt-24">
-        <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Projects</h2>
+        <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Work</h2>
         <ProjectSlider />
       </section>
 
       {/* Blog Section */}
-      <section id="blog" className="container mx-auto scroll-mt-24">
+      {/* <section id="blog" className="container mx-auto scroll-mt-24">
         <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">
           Blog
         </h2>
@@ -74,11 +74,11 @@ export default function Page() {
           </li>
         ))}
       </ul>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
-      <section id="contact" className="container mx-auto pb-12 scroll-mt-24">
-        <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Contact</h2>
+      <section id="contact" className="container mx-auto mt-16 pb-24 scroll-mt-24">
+        <h2 className="text-4xl sm:text-5xl font-bold font-yesteryear text-accent-400 mb-7 text-center tracking-wider">Reach out</h2>
         {/* <h3 className="text-accent-40 text-center text-lg sm:text-xl mb-8">
           Want to collaborate, have project ideas, or curious about something? Hit
           me up!
