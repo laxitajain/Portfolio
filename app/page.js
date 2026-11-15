@@ -1,6 +1,5 @@
 import CustomTypewriter from "./_components/Typewriter";
 import Image from "next/image";
-import Timeline from "./_components/Timeline";
 import ProjectSlider from "./_components/ProjectSlider";
 // import BlogCard from "./_components/BlogCard";
 import Contact from "./_components/Contact";
