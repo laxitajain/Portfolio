@@ -51,7 +51,7 @@ export default function AboutRadial() {
         <div className="hidden sm:block relative w-[20%] shrink-0">
           {/* The ring */}
           <motion.div
-            className="absolute rounded-full border-2 border-primary-80 shadow-[0_0_15px_rgba(160,90,220,0.1)]"
+            className="absolute rounded-full border-[3px] border-secondary-10 shadow-[0_0_15px_rgba(160,90,220,0.1)]"
             style={{
               width: 800,
               height: 800,
