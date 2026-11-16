@@ -49,9 +49,4 @@ This app is production-ready and fully optimized for seamless deployment on [Ver
 
 ## License
 
-This project is licensed under the
-[Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
-
-You are free to share, adapt, modify, and use this project
-for any purpose, including commercially, provided appropriate
-attribution is given to me.
+[![CC BY 4.0](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
